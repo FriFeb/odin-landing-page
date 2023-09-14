@@ -6,17 +6,28 @@
 
 body {
   font-family: Roboto;
-  display: flex;
-  flex-direction: column;
 }
 
 ul {
   list-style: none;
 }
 
+body,
+.header-section .container,
+.information-section .container,
+.quote-section .container {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   max-width: 1100px;
   margin: auto;
+}
+
+.main-text,
+.logo-text {
+  color: #f9faf8;
 }
 
 .main-text {
@@ -35,14 +46,17 @@ ul {
   font-weight: bolder;
 }
 
-.secondary-text {
-  font-size: 18px;
-  font-weight: normal;
+.secondary-text,
+.btn-text {
   color: #e5e7eb;
 }
 
+.secondary-text {
+  font-size: 18px;
+  font-weight: normal;
+}
+
 .btn-text {
-  color: #fff;
   font-weight: bold;
 }
 
@@ -56,13 +70,7 @@ ul {
 /* HEADER */
 
 .header-section {
-  color: #f9faf8;
   background-color: #1f2937;
-}
-
-.header-section .container {
-  display: flex;
-  flex-direction: column;
 }
 
 .header-section .container > * {
@@ -94,18 +102,17 @@ ul {
 }
 
 .header-image {
+  color: #f9faf8;
+  background-color: hsl(215, 10%, 40%);
   border: 1px solid;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(215, 10%, 40%);
 }
 
 /* INFORMATION */
 
 .information-section .container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   padding-bottom: 6rem;
 }
@@ -138,8 +145,6 @@ ul {
 }
 
 .quote-section .container {
-  display: flex;
-  flex-direction: column;
   padding: 6rem 4rem 6rem 6rem;
 }
 
@@ -158,11 +163,10 @@ ul {
 /* SIGNUP */
 
 .signup-section .container {
-  color: #f9faf8;
+  border-radius: 10px;
+  background-color: #3882f6;
   margin: 6rem auto;
   padding: 2.5rem 6rem;
-  background-color: #3882f6;
-  border-radius: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -174,7 +178,7 @@ ul {
 /* FOOTER */
 
 .footer-section {
-    background-color: #1f2937;
-    padding: 2rem;
-    text-align: center;
+  background-color: #1f2937;
+  padding: 2rem;
+  text-align: center;
 }
